@@ -2,8 +2,8 @@ from fastapi import FastAPI, HTTPException
 from pydantic import BaseModel
 import uuid
 import os
-from redis_client import get_history, save_history, clear_session
-from groq_client import chat_with_groq
+from App.redis_client import get_history, save_history, clear_session
+from App.groq_client import chat_with_groq
 
 from typing import Optional
 
